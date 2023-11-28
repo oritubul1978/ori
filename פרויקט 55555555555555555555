@@ -1,0 +1,94 @@
+שאלה 1
+import java.util.Scanner;
+
+public class PositiveNegativeCheck {
+    public static void main(String[] args) {
+      
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Enter an integer: ");
+        int number = scanner.nextInt();
+
+
+        scanner.close();
+
+        
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+שאלה 2
+import java.util.Scanner;
+
+public class PrintSmallerNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        
+        scanner.close();
+
+        printSmallerNumber(num1, num2);
+    }
+
+    public static void printSmallerNumber(double a, double b) {
+        double smallerNumber = Math.min(a, b);
+        System.out.println("The smaller number is: " + smallerNumber);
+    }
+}
+
+שאלה 3
+import java.util.Scanner;
+
+public class CyclistSignal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        System.out.println("Enter information for the first cyclist:");
+        System.out.print("Enter the first letter of the cyclist: ");
+        char cyclist1 = scanner.next().charAt(0);
+
+        System.out.print("Enter the distance for " + cyclist1 + " (in kilometers): ");
+        double distance1 = scanner.nextDouble();
+
+        System.out.print("Enter the speed for " + cyclist1 + " (in km/h): ");
+        double speed1 = scanner.nextDouble();
+
+    
+        System.out.println("\nEnter information for the second cyclist:");
+        System.out.print("Enter the first letter of the cyclist: ");
+        char cyclist2 = scanner.next().charAt(0);
+
+        System.out.print("Enter the distance for " + cyclist2 + " (in kilometers): ");
+        double distance2 = scanner.nextDouble();
+
+        System.out.print("Enter the speed for " + cyclist2 + " (in km/h): ");
+        double speed2 = scanner.nextDouble();
+
+        scanner.close();
+
+        double time1 = distance1 / speed1;
+        double time2 = distance2 / speed2;
+
+        
+        char fasterCyclist = (time1 < time2) ? cyclist1 : cyclist2;
+
+        
+        System.out.println("\nThe cyclist with the minimum time is: " + fasterCyclist);
+    }
+}
+שאלה 4
+פתרו איתך 
