@@ -1,0 +1,81 @@
+שאלה 2
+ import java.util.Scanner;
+
+public class FindMinimum {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+      
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        System.out.print("Enter the third number: ");
+        double num3 = scanner.nextDouble();
+
+       
+        scanner.close();
+
+        
+        double minimum = Math.min(Math.min(num1, num2), num3);
+
+        // Print the result
+        System.out.println("The smallest of " + num1 + ", " + num2 + ", and " + num3 + " is: " + minimum);
+    }
+}
+
+שאלה 3
+import java.util.Scanner;
+
+public class CalculateDistance {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+    
+        System.out.print("Enter x-coordinate of the first point: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("Enter y-coordinate of the first point: ");
+        double y1 = scanner.nextDouble();
+
+      
+        System.out.print("Enter x-coordinate of the second point: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("Enter y-coordinate of the second point: ");
+        double y2 = scanner.nextDouble();
+
+      
+        scanner.close();
+
+       
+        double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        System.out.println("The distance between the points is: " + distance);
+    }
+}
+שאלה 4
+import java.util.Scanner;
+
+public class InvoiceSeries {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Enter the first term (a1) of the series: ");
+        double a1 = scanner.nextDouble();
+
+        System.out.print("Enter the common difference (d) of the series: ");
+        double d = scanner.nextDouble();
+
+
+        scanner.close();
+
+        double a5 = a1 + 4 * d; // a5 = a1 + 4d
+        double a10 = a1 + 9 * d; // a10 = a1 + 9d
+
+        System.out.println("The fifth term of the series is: " + a5);
+        System.out.println("The tenth term of the series is: " + a10);
+    }
+}
