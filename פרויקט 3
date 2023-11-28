@@ -1,0 +1,76 @@
+.1 כתוב תוכנית המגדירה 3 משתנים ומדפיסה את הממוצע שלהם.
+תשובה:
+import java.util.Scanner;
+
+public class CalculateAverage {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter three numbers
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        System.out.print("Enter the third number: ");
+        double num3 = scanner.nextDouble();
+
+        // Close the scanner to avoid resource leaks
+        scanner.close();
+
+        // Calculate the average
+        double average = (num1 + num2 + num3) / 3;
+
+        // Print the result
+        System.out.println("The average of " + num1 + ", " + num2 + ", and " + num3 + " is: " + average);
+    }
+}
+שאלה 2
+import java.util.Scanner;
+
+public class RightTriangle {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter the lengths of sides a and b
+        System.out.print("Enter the length of side a: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Enter the length of side b: ");
+        double b = scanner.nextDouble();
+
+        // Close the scanner to avoid resource leaks
+        scanner.close();
+
+        // Calculate the length of side c (hypotenuse) using the Pythagorean theorem
+        double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+        // Print the result
+        System.out.println("The length of side c (hypotenuse) is: " + c);
+    }
+}
+שאלה 3
+vimport java.util.Scanner;
+
+public class FunctionCalculator {
+    public static void main(String[] args) {
+        // Create a Scanner object to take input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter the value of x
+        System.out.print("Enter the value of x: ");
+        double x = scanner.nextDouble();
+
+        // Close the scanner to avoid resource leaks
+        scanner.close();
+
+        // Calculate the value of y using the function y = 5x^2
+        double y = (2*x) + 5;
+
+        // Print the result
+        System.out.println("For x = " + x + ", the value of y is: " + y);
+    }
+}
